@@ -39,10 +39,11 @@ def Parser():
 
     Options = parser.parse_args()  # main user args
 
+   # Updated script due to variable naming  issues
    # if Options.output[len(Options.output)-1]!="/":
    #     Options.output+="/"
 
-    if Options.outputLoc[-1] != "/":
+    if Options.outputLoc[len(Options.outputLoc)-1] != "/":
         Options.outputLoc += "/"
 
     try:
